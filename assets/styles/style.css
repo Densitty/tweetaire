@@ -185,7 +185,29 @@ body {
   background-color: #d9ebf7;
 }
 
+/* middle content ends */
 
+/* footer */
+.main-page-footer {
+  grid-row: 2/3;
+  /* -1 implies the end of the grid line */
+  grid-column: 1/-1;
+  padding: 1.5rem;
+  background-color: #f5f4f4;
+  border-top: 0.1rem solid #ddd;
+}
 
+.main-page-footer ul {
+  display: flex;
+  justify-content: center;
+}
 
-/* middle content endss */
+.main-page-footer ul a {
+  color: #444;
+  font-size: 1.6rem;
+  margin: 0 2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+/* footer ends */
