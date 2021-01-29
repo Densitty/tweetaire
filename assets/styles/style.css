@@ -230,7 +230,15 @@ body {
   grid-row: 1/2;
   background-color: #fff;
   padding: 2.5rem 0;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+
+
 
 .login {
   grid-row: 2/3;
@@ -238,5 +246,69 @@ body {
   background-color: #fff;
   width: 100rem;
 }
+
+.login-page-nav ul {
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.login-page-nav a {
+  font-size: 1.6rem;
+  color: #555;
+  transition: color 0.5s;
+}
+
+.login-page-nav li:hover a {
+  color: #1aa1f5;
+}
+
+.login-page-nav li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.login-page-nav li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #1aa1f5;
+  height: 0.5rem;
+  bottom: -2.5rem;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.login-page-nav li:hover::after {
+  opacity: 1;
+}
+
+.login-page-nav .fa-dove {
+  font-size: 2rem;
+}
+
+/* using a hack because of offline font-awesome css not working except the use of js which works differently */
+/* remove everything between this line when icon is linked to the icon cdn */
+.login-page-nav svg {
+  position: absolute;
+  left: -20px;
+}
+
+/* remove everything between this line when icon is linked to the icon cdn */
+
+
+/* place the last li at the rightmost corner of the parent */
+.login-page-nav li:nth-child(3) {
+  margin-left: auto;
+}
+
+/* disable the after pseudo-element of the last li element */
+.login-page-nav li:nth-child(3)::after {
+  display: none;
+}
+
 
 /* login page ends */
