@@ -39,6 +39,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   /*make 2 rows for the page with the second row occupying the smallest possible size */
   grid-template-rows: 1fr min-content;
+  display: none;
 }
 
 .left {
