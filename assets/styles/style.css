@@ -235,18 +235,6 @@ body {
 
 
 
-
-
-
-
-
-.login {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  background-color: #fff;
-  width: 100rem;
-}
-
 .login-page-nav ul {
   width: 100rem;
   margin: 0 auto;
@@ -310,5 +298,23 @@ body {
   display: none;
 }
 
+
+.login {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: #fff;
+  width: 100rem;
+  display: grid;
+  grid-template-columns: 10rem 8fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.login-content {
+  background: yellowgreen;
+}
+
+.login-footer {
+  background: palegreen;
+}
 
 /* login page ends */
