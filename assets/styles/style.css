@@ -499,9 +499,7 @@ body {
   padding-top: 6.5rem;
 }
 
-.feeds-content img {
-  width: 4rem;
-}
+
 
 .feeds-header {
   grid-column: 2/3;
@@ -525,6 +523,41 @@ body {
 .header-top svg {
   font-size: 2rem;
   color: #1aa1f5;
+}
+
+.header-post {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.header-img-wrapper {
+  margin-right: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.header-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-post input {
+  width: 35rem;
+  height: 3rem;
+  border: 0.1rem solid #d6e1e9;
+  background-color: #d6e1e9;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.header-post svg {
+  color: #1aa1f5;
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 /* newsfeed page ends */
