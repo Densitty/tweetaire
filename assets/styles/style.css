@@ -31,6 +31,10 @@ body {
   text-transform: uppercase;
 }
 
+.display-none {
+  display: none;
+}
+
 
 .main-page {
   width: 100%;
@@ -223,6 +227,7 @@ body {
   grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
   grid-template-rows: repeat(2, min-content) 1fr;
   row-gap: 1.5rem;
+  display: none;
 }
 
 .login-page-nav {
@@ -395,3 +400,8 @@ body {
 }
 
 /* login page ends */
+
+
+/* newsfeed page */
+
+/* newsfeed page ends */
