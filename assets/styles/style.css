@@ -560,4 +560,81 @@ body {
   margin: 1rem;
 }
 
+.posts {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  background-color: #fff;
+}
+
+.post {
+  display: flex;
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.user-avatar {
+  width: 6rem;
+  height: 6rem;
+  /* flex-shrink distorts the shape of the image, hence we need to set it to 0 to disable the shrinking of the image container and the image inside */
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.user-avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.post-content {}
+
+.post-user-info {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.post-user-info h4 {
+  font-size: 1.6rem;
+  margin-right: 0.6rem;
+}
+
+.post-user-info svg {
+  font-size: 1.6rem;
+  color: #1aa1f5;
+  margin-right: 0.5rem;
+}
+
+.post-user-info span {
+  font-size: 1.6rem;
+}
+
+.post-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.post-img {
+  width: 48rem;
+  height: 30rem;
+}
+
+.post-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.post-icons {
+  margin-top: 1rem;
+}
+
+.post-icons svg {
+  font-size: 1.6rem;
+  color: #868383;
+  margin-right: 6rem;
+}
+
 /* newsfeed page ends */
