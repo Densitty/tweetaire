@@ -64,8 +64,12 @@
               <span class="upper">e</span>xplore what's happening in the world
             </h1>
             <h4>join tweetaire now!</h4>
-            <button class="sign-up"><span class="upper">s</span>ign up</button>
-            <button class="log-in"><span class="upper">l</span>og in</button>
+            <button class="main-btn sign-up">
+              <span class="upper">s</span>ign up
+            </button>
+            <button class="main-btn log-in">
+              <span class="upper">l</span>og in
+            </button>
           </div>
         </div>
       </aside>
@@ -123,8 +127,16 @@
             <span class="upper">t</span>weetaire
           </h2>
           <form action="" class="login-form">
-            <input type="text" placeholder="Phone, email, username" />
-            <input type="password" placeholder="Password" />
+            <input
+              type="text"
+              placeholder="Phone, email, username"
+              class="login-user-info"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="login-user-password"
+            />
             <div>
               <button class="login-form-btn">
                 <span class="upper">l</span>og in
@@ -155,6 +167,16 @@
         </footer>
       </div>
       <!-- login ends -->
+
+      <!-- login error modal -->
+      <div class="login-modal">
+        <i class="fas fa-times"></i>
+        <p>
+          The username and password entered are incorrect. Please enter the
+          correct username and password to gain access.
+        </p>
+      </div>
+      <!-- login error modal ends -->
     </section>
     <!-- login page ends -->
 
