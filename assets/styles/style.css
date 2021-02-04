@@ -717,7 +717,27 @@ body {
 .follow-footer li a {
   font-size: 1.5rem;
   color: #868383;
+}
 
+
+.post-btn {
+  position: fixed;
+  bottom: 2rem;
+  left: 68%;
+  width: 14rem;
+  padding: 1rem 0.5rem;
+  background-color: #1aa1f5;
+  color: #fff;
+  font-size: 1.6rem;
+  border: 0.1rem solid #1aa1f5;
+  border-radius: 3rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.post-btn:hover {
+  background-color: #117abb;
 }
 
 /* newsfeed page ends */
