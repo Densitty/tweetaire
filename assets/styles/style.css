@@ -819,7 +819,7 @@ body {
   padding: 1.5rem 2.5rem;
 }
 
-.modal-wrapper svg {
+.modal-header svg {
   color: #1aa1f5;
   font-size: 2.3rem;
   cursor: pointer;
@@ -837,13 +837,78 @@ body {
   opacity: 0.5;
 }
 
+.modal-body {
+  display: flex;
+  padding: 2rem 1.5rem 1rem;
+  margin-top: 1.3rem;
+}
+
 .modal-img {
   width: 4rem;
+  height: 4rem;
+  margin-right: 1.4rem;
 }
 
 .modal-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.modal-input {
+  width: 50rem;
+  padding: 1rem 0 8rem 1rem;
+  background-color: #d6e1e9;
+  border: 0.1rem solid #eee;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.modal-input:focus {
+  background-color: #fff;
+  border-color: #1aa1f5;
+}
+
+.modal-body svg {
+  position: absolute;
+  bottom: 8rem;
+  right: 4rem;
+  color: #1aa1f5;
+  font-size: 2rem;
+}
+
+.modal-footer {
+  padding: 0 2rem 2rem 8rem;
+}
+
+.modal-icons {
+  display: flex;
+  align-items: center;
+}
+
+.modal-icons svg {
+  font-size: 2.7rem;
+  margin-right: 2rem;
+  color: #1aa1f5;
+}
+
+.modal-icons span {
+  /* place the + symbol at the far right */
+  margin-left: auto;
+  font-size: 3.5rem;
+  color: #1aa1f5;
+  border: 0.1rem solid #1aa1f5;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  /* in order to center the + */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
 }
 
 /* post modal ends */
