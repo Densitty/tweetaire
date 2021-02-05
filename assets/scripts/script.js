@@ -4,6 +4,12 @@ const feedsPage = document.querySelector(".feeds-page");
 const loginBtn = document.querySelector(".btn-top");
 const loginFormBtn = document.querySelector(".login-form .login-form-btn");
 const loginError = document.querySelector(".login-modal");
+const postBtn = document.querySelector(".post-btn");
+const modalWrapper = document.querySelector(".modal-wrapper");
+const modal = document.querySelector(".modal");
+const postTweet = document.querySelector(".modal-header button");
+const addTweet = document.querySelector(".modal-icons span");
+const feedInput = document.querySelector(".modal-input");
 
 // Target either the signup or login button
 const middleContent = document.querySelector(".middle-content");
@@ -58,6 +64,43 @@ loginError.addEventListener("click", (e) => {
     console.log(e.currentTarget);
   }
 });
+
+postBtn.addEventListener("click", () => {
+  modalWrapper.classList.add("modal-wrapper-active");
+  modal.classList.add("modal-active");
+});
+
+/* remove the modal-wrapper from the screen upon clicking of x */
+document.querySelector(".modal-header").addEventListener("click", (e) => {
+  if (e.target.tagName === "path") {
+    modalWrapper.classList.remove("modal-wrapper-active");
+    modal.classList.remove("modal-active");
+    // clear everything inside the input
+    feedInput.value = "";
+    // decrease the opacity of the modal post buttons again
+    changeOpacity(0.5);
+  }
+});
+
+/* activate the post btn or + icon when the input element is focused on and the length of the value is more than 1 */
+
+feedInput.addEventListener("keyup", makeOpacityChanges);
+
+// feedInput.addEventListener("blur", makeOpacityChanges);
+
+function makeOpacityChanges(e) {
+  const tweet = e.target.value;
+  if (tweet.length > 0) {
+    changeOpacity(1);
+  } else {
+    changeOpacity(0.5);
+  }
+}
+
+function changeOpacity(x) {
+  postTweet.style.opacity = x;
+  addTweet.style.opacity = x;
+}
 
 function activateLoginValidator(username, password) {
   if (username.value !== "" && password.value !== "") {

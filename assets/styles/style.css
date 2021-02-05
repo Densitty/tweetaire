@@ -782,6 +782,7 @@ body {
   border: 0.1rem solid #1aa1f5;
   border-radius: 3rem;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  outline: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -799,6 +800,13 @@ body {
   // z-index: 200;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-wrapper-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal {
@@ -809,6 +817,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 1.5rem;
+  display: none;
+  z-index: 10;
+}
+
+.modal-active {
+  display: block;
 }
 
 .modal-header {
