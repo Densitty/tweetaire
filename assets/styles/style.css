@@ -927,4 +927,134 @@ body {
 
 /* post modal ends */
 
+/* feedpage sidebar */
+.sidebar-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* if we want the div to stretch, it's either we specify right and bottom  */
+  // right: 0;
+  // bottom: 0;
+  /* or specify the height and width */
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 30rem;
+  padding: 2.5rem;
+  box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.sidebar-header h2 {
+  font-size: 2rem;
+}
+
+.sidebar-header svg {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1aa1f5;
+  margin-left: auto;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.sidebar-user-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.sidebar-user-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar-user span {
+  margin-left: auto;
+  font-size: 3rem;
+  color: #1aa1f5;
+  border: 0.1rem solid #1aa1f5;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  /* to enable center-placement of the + icon in the box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-user-info {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.sidebar-user-info h4 {
+  margin-bottom: 0.5rem;
+}
+
+.following {
+  display: flex;
+  // background-color: red;
+  padding: 1.5rem 0;
+  justify-content: space-between;
+}
+
+.following-paragraph {
+  font-size: 1.5rem;
+}
+
+.following-paragraph span {
+  font-weight: bold;
+}
+
+.sidebar-list-1 {
+  border-bottom: 0.1rem solid #eee;
+}
+
+.sidebar-list-1 ul {
+  padding: 1.5rem 0;
+}
+
+.sidebar-list-2 ul {
+  padding: 3rem 0;
+}
+
+.sidebar-list-1 li,
+.sidebar-list-2 li {
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-list-1 li a,
+.sidebar-list-2 li a {
+  color: #868383;
+  font-size: 1.6rem;
+}
+
+.sidebar-list-1 li svg {
+  margin-right: 1rem;
+}
+
+
+
+
+/* feedpage sidebar ends */
 /* newsfeed page ends */
