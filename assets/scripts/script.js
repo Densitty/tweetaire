@@ -10,6 +10,10 @@ const modal = document.querySelector(".modal");
 const postTweet = document.querySelector(".modal-header button");
 const addTweet = document.querySelector(".modal-icons span");
 const feedInput = document.querySelector(".modal-input");
+// sidebar variable space
+const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+const sidebar = document.querySelector(".sidebar");
+const showMore = document.querySelector(".user .user-link");
 
 // Target either the signup or login button
 const middleContent = document.querySelector(".middle-content");
@@ -96,6 +100,28 @@ function makeOpacityChanges(e) {
     changeOpacity(0.5);
   }
 }
+
+/* close the sidebar */
+sidebarWrapper.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-times")) {
+    console.log("yes");
+    sidebar.classList.remove("show-sidebar");
+    sidebarWrapper.classList.remove("show-sidebar-wrapper");
+    // setTimeout(() => {
+    // }, 600);
+  }
+  // const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+});
+
+console.log(showMore);
+showMore.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("open sidebar");
+  sidebarWrapper.classList.add("show-sidebar-wrapper");
+  sidebar.classList.add("show-sidebar");
+  // setTimeout(() => {
+  // }, 200);
+});
 
 function changeOpacity(x) {
   postTweet.style.opacity = x;
