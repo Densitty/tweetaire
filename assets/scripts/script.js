@@ -10,10 +10,13 @@ const modal = document.querySelector(".modal");
 const postTweet = document.querySelector(".modal-header button");
 const addTweet = document.querySelector(".modal-icons span");
 const feedInput = document.querySelector(".modal-input");
+
 // sidebar variable space
 const sidebarWrapper = document.querySelector(".sidebar-wrapper");
 const sidebar = document.querySelector(".sidebar");
 const showMore = document.querySelector(".user .user-link");
+const toggle = document.querySelector(".toggle");
+const circle = document.querySelector(".circle");
 
 // Target either the signup or login button
 const middleContent = document.querySelector(".middle-content");
@@ -113,7 +116,6 @@ sidebarWrapper.addEventListener("click", (e) => {
   // const sidebarWrapper = document.querySelector(".sidebar-wrapper");
 });
 
-console.log(showMore);
 showMore.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("open sidebar");
@@ -121,6 +123,21 @@ showMore.addEventListener("click", (e) => {
   sidebar.classList.add("show-sidebar");
   // setTimeout(() => {
   // }, 200);
+});
+
+// activate the dark mode
+toggle.addEventListener("click", () => {
+  circle.classList.toggle("move");
+  /* to avoid pollution of the local scope with 7 variables, assign generic class to all the elements and loop through  */
+  const darkModeOne = document.querySelectorAll(".dark-m1");
+  const darkModeTwo = document.querySelectorAll(".dark-m2");
+  /* loop through */
+  darkModeOne.forEach((el) => {
+    el.classList.toggle("dark-one");
+  });
+  darkModeTwo.forEach((el) => {
+    el.classList.toggle("dark-two");
+  });
 });
 
 function changeOpacity(x) {

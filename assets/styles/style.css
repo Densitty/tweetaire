@@ -562,7 +562,7 @@ body {
   display: flex;
   // align-items: center;
   justify-content: space-between;
-  border: 0.1rem solid #eee;
+  border-bottom: 0.1rem solid #eee;
   padding: 1.5rem;
 }
 
@@ -1066,7 +1066,128 @@ body {
   margin-right: 1rem;
 }
 
+/* dark mode */
+.dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.dark-mode p {
+  font-size: 1.6rem;
+  color: #868383;
+}
+
+.toggle {
+  width: 4.5rem;
+  height: 1.5rem;
+  background-color: #777;
+  border-radius: 3rem;
+  box-shadow: inset 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  cursor: pointer;
+}
+
+.circle {
+  background-color: #ddd;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  /* a way of setting the top position */
+  /* top: -0.2rem; */
+  left: 0;
+  /* alternative way of setting position */
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  transition: all 0.1s linear;
+}
+
+/* to move the toggle to the right */
+.move {
+  /* remove the width of the circle from the width of the parent to get the accurate position on the right */
+  left: calc(4.5rem - 2rem);
+  background-color: #117abb;
+}
+
+.search-bar-input.dark-two {
+  border-color: #10171e
+}
+
+.search-bar-input.dark-two:focus {
+  color: #fff;
+  background-color: #10171e;
+}
+
+.dark-one {
+  background-color: #1c2938;
+}
+
+.dark-two {
+  background-color: #10171e;
+}
+
+.header-top.dark-one {
+  color: #fff;
+}
+
+.feeds-header.dark-one .header-top {
+  color: #fff;
+}
+
+.feeds-header.dark-one input {
+  background-color: #10171e;
+  border-color: #10171e;
+}
+
+.feeds-nav.dark-one .user-link {
+  color: #fff;
+}
+
+.posts.dark-one {
+  color: #fff;
+}
+
+.modal.dark-two {
+  background-color: #1c2938
+}
+
+.modal.dark-two button {
+  color: #fff;
+}
+
+.modal.dark-two .modal-input {
+  background-color: #10171e;
+  border-color: #10171e;
+  color: #fff;
+}
+
+.posts.dark-one svg {
+  color: #f0eaea;
+}
+
+.follow.dark-two {
+  color: #fff;
+}
+
+.follow.dark-two .follow-btn {
+  background-color: #10171e;
+}
+
+.follow.dark-two .follow-footer ul {
+  background-color: #10171e;
+}
+
+.follow.dark-two .follow-footer a {
+  color: #eee;
+}
+
+.sidebar.dark-two {
+  color: #fff;
+}
+
+/* dark mode ends*/
 
 
 /* feedpage sidebar ends */
