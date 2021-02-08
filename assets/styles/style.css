@@ -1243,6 +1243,37 @@ body {
   .main-page-footer {
     grid-row: 3/4;
   }
+
+  /* login page */
+  .login-page-nav ul {
+    width: 80rem;
+  }
+
+  .login {
+    width: 80rem;
+  }
+
+  .login-modal {
+    width: 60rem;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  /* login page */
+  .login-page-nav ul {
+    width: 70rem;
+  }
+
+  .login {
+    width: 70rem;
+  }
+
+  .login-modal {
+    width: 50rem;
+    top: 21%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1267,6 +1298,35 @@ body {
   .left-content {
     width: 60%;
   }
+
+  /* login page */
+  .login-page-nav ul {
+    width: 60rem;
+  }
+
+  .login {
+    width: 60rem;
+  }
+
+  .login-modal {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  /* login page */
+  .login-page-nav ul {
+    width: 50rem;
+  }
+
+  .login {
+    width: 50rem;
+  }
+
+  .login-modal {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1284,6 +1344,46 @@ body {
     width: 90%;
     grid-row: 1/2;
   }
+
+  /* login page */
+  .login-page-nav ul {
+    width: 40rem;
+  }
+
+  .login {
+    width: 40rem;
+  }
+
+  .login-modal {
+    top: 25%;
+  }
+
+
+  .login-content {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .login-form {
+    // background: red;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .login-form input:not([type="checkbox"]) {
+    width: 26rem;
+    height: 2.5rem;
+  }
+
+  .login-form button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .login-form label,
+  .login-form a {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1291,5 +1391,53 @@ body {
   /* main-page */
   .middle-content h1 {
     font-size: 2.5rem;
+  }
+
+  /* login page*/
+  .login-page-nav ul {
+    // width: 30rem;
+  }
+
+  .login {
+    width: 30rem;
+  }
+
+  .login-content h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .login-form input:not([type="checkbox"]) {
+    width: 24rem;
+  }
+
+  .login-content a {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .login-footer {
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .login-footer p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* login page */
+  .login-page-nav ul {
+    width: 30rem;
+  }
+
+  .login {
+    width: 25rem;
+  }
+
+  .login-form input:not([type="checkbox"]) {
+    width: 21rem;
   }
 }
